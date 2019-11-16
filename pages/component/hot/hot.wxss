@@ -1,0 +1,136 @@
+/* pages/hot/hot.wxss */
+.content {
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 100%;
+}
+swiper {
+  height: 376rpx;
+}
+swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+/* 视屏区域 */
+.hot-video {
+  width: 100%;
+  height: 650rpx;
+  background-color: #FFFFFF;
+  margin-top: 10rpx;
+  box-sizing: border-box;
+}
+.square {
+  width: 8rpx;
+  height: 26rpx;
+  background-color:#3C7BF9;
+  margin-top: 14rpx;
+  margin-left: 44rpx;
+  float: left;
+}
+.tutor-class {
+  font-size: 20rpx;
+  float: left;
+  margin-top: 14rpx;
+  margin-left: 10rpx;
+  margin-bottom: 16rpx;
+  color: #343434;
+}
+.all {
+  float: right;
+  font-size: 18rpx;
+  color: #343434;
+  margin-top: 16rpx;
+  margin-right: 44rpx;
+}
+.video {
+  width: 310rpx;
+  height: 280rpx;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  margin-top: 10rpx;
+  position: relative;
+}
+.video-play {
+  width: 52rpx;
+  height: 52rpx;
+  position: absolute;
+  top: 76rpx;
+  left: 140rpx;
+}
+.video:nth-child(n) {
+  float: left;
+  margin-left: 44rpx;
+}
+.video:nth-child(2n) {
+  float: right;
+  margin-right: 42rpx;
+}
+.video-img {
+  width: 322rpx;
+  height: 214rpx;
+}
+.video-title {
+  font-size: 18rpx;
+  width: 300rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.video-icon {
+  float: left;
+  width: 22rpx;
+  height: 16rpx;
+  margin-top: 2rpx;
+}
+.video-watch {
+  float: left;
+  font-size: 16rpx;
+  color: #8A8A8A;
+  margin-left: 4rpx;
+}
+.video-free {
+  float: right;
+  font-size: 16rpx;
+  color: #FF6000;
+  margin-left: 4rpx;
+}
+.video-bottom {
+  margin-top: 6rpx;
+}
+.video-play {
+  width: 52rpx;
+  height: 52rpx;
+  position: absolute;
+  top: 80rpx;
+  left: 130rpx;
+}
+
+/* 底部区域 */
+.footer {
+  background-color: #FFFFFF;
+  width: 100%;
+}
+.footer-img {
+  width: 306rpx;
+  height: 78rpx;
+  margin: 0 auto;
+  margin-top: 52rpx;
+  margin-left: 208rpx;
+}
+.footer-text {
+  font-size: 24rpx;
+  color: #B8B6B6;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 24rpx;
+  padding-bottom: 38rpx;
+  margin-bottom: 90rpx;
+  margin-left: 176rpx;
+}
+.f-text:first-child {
+  margin-left: 0;
+}
+.f-text {
+  margin-left: 64rpx;
+}

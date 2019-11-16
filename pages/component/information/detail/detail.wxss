@@ -1,0 +1,114 @@
+/* pages/information/detail/detail.wxss */
+/* 顶部区域 */
+.content {
+  position: relative;
+}
+video {
+  width: 100%;
+}
+.video-play-head {
+  width: 86rpx;
+  height: 86rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 144rpx;
+}
+.image-head {
+  width: 100%;
+  height: 374rpx;
+}
+
+/* 切换栏 */
+.swiper-tab {
+  height: 58rpx;
+  line-height: 80rpx;
+  background: #FFFFFF;
+  color:#747474 ;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 26rpx;
+}
+ 
+.swiper-tab-list {
+  box-sizing: border-box;
+  margin-left: 56rpx;
+  font-size: 20rpx;
+  height: 70rpx;
+  border-bottom:4rpx solid white;
+}
+ 
+.on {
+  border-bottom:4rpx solid #006CFF;
+  color: #006CFF;
+}
+
+/* 视屏区域 */
+.swiper-box .information {
+  width: 100%;
+  height: 680rpx;
+  background-color:#FFFFFF;
+  margin-top: 8rpx;
+}
+.swiper-box .info-content {
+  width: 668rpx;
+  height: 130rpx;
+  border-bottom: 2rpx solid rgba(198, 198, 198, 0.219);
+  margin-left: 44rpx;
+  margin-top: 14rpx;
+  padding-bottom: 12rpx;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.swiper-box .info-content:last-child {
+  border: 0;
+}
+.swiper-box .info-image {
+  width: 208rpx;
+  height: 130rpx;
+  float: left;
+  margin-bottom: 26rpx;
+}
+.swiper-box .info-R {
+  float: left;
+  margin-left: 20rpx;
+}
+.swiper-box .info-L .video-deta {
+  font-size: 7px;
+  color: #8A8A8A;
+  float: right;
+  margin-top: 10rpx;
+  margin-left: 4rpx;
+}
+.swiper-box .info-title {
+  font-size: 16rpx;
+  font-weight: 600;
+}
+.swiper-box .info-info {
+  font-size: 14rpx;
+  margin-top: 18rpx;
+  color: #8A8A8A;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 438rpx;
+  height: 60rpx;
+}
+.swiper-box .video-icon {
+  float: left;
+  width: 22rpx;
+  height: 16rpx;
+  margin-top: 10rpx;
+}
+.swiper-box .video-watch {
+  float: left;
+  font-size: 14rpx;
+  color: #8A8A8A;
+  margin-left: 4rpx;
+  margin-top: 10rpx;
+}

@@ -1,0 +1,241 @@
+/* 遮罩成 */
+page {
+  position: relative;
+}
+.mark {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.5);
+  position: absolute;
+  z-index: 10;
+}
+.mark .nonbuy {
+  width: 668rpx;
+  height: 390rpx;
+  background-color: #FFFFFF;
+  border-radius: 6rpx;
+  margin-top: 220rpx;
+  margin-left: 44rpx;
+}
+.mark .nonbuy .nonbuy-T {
+  box-sizing: border-box;
+  height: 60%;
+  width: 100%;
+  border-bottom: 2rpx solid rgba(188, 188, 188, 0.479);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mark .nonbuy .nonbuy-T .txt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.mark .nonbuy .nonbuy-T .txt:first-child{
+  font-size: 10px;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 8rpx;
+}
+.mark .nonbuy .nonbuy-T .txt:nth-child(2) {
+  font-size: 18rpx;
+  color: #777777;
+  box-sizing: border-box;
+  margin-top: 60rpx;
+}
+.mark .nonbuy .nonbuy-T .txt:nth-child(3) {
+  height: 46rpx;
+  font-size: 18rpx;
+  color:#343434;
+  /* padding-bottom: 10rpx; */
+  margin-top: 60rpx;
+  display: flex;
+  align-items: center;
+}
+.mark .nonbuy .nonbuy-T .txt:last-child {
+  height: 46rpx;
+  font-size: 18rpx;
+  color:#343434;
+  display: flex;
+  align-items: center;
+}
+.mark .nonbuy .nonbuy-B {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.mark .nonbuy .nonbuy-B .txt {
+  width: 100%;
+  height: 50%;
+  font-size: 22rpx;
+  color: #FF0000;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mark .nonbuy .nonbuy-B .txt:first-child {
+  border-right: 2rpx solid rgba(128, 128, 128, 0.199);
+  border-bottom: 2rpx solid rgba(188, 188, 188, 0.479);
+}
+.mark .nonbuy .nonbuy-B .txt:last-child {
+}
+/* 顶部区域 */
+.content {
+  position: relative;
+}
+.video-play-head {
+  width: 86rpx;
+  height: 86rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 144rpx;
+}
+.image-head {
+  width: 100%;
+  height: 374rpx;
+}
+
+/* 切换栏 */
+.swiper-tab {
+  height: 58rpx;
+  line-height: 80rpx;
+  background: #FFFFFF;
+  color:#747474 ;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 12rpx;
+}
+ 
+.swiper-tab-list {
+  box-sizing: border-box;
+  margin-left: 56rpx;
+  padding-left: 14rpx;
+  font-size: 20rpx;
+  border-bottom:4rpx solid #FFFFFF;
+}
+ 
+.on {
+  border-bottom:4rpx solid #006CFF;
+  color: #006CFF;
+}
+
+/* 内容区域 */
+.info-content {
+  width: 668rpx;
+  height: 100rpx;
+  background-color: #FFFFFF;
+  margin-left: 44rpx;
+}
+.content-L {
+  box-sizing: border-box;
+  height: 100rpx;
+  width: 668rpx;
+  border-top: 2rpx solid rgba(188, 188, 188, 0.274);
+  padding: 0 10rpx;
+}
+.info-content:last-child {
+  border: 0;
+}
+.video-icon {
+  float: left;
+  width: 22rpx;
+  height: 16rpx;
+  margin-top: 6rpx;
+}
+.video-watch {
+  float: left;
+  font-size: 14rpx;
+  color: #8A8A8A;
+  margin-left: 4rpx;
+  margin-top: 6rpx;
+}
+.info-R {
+  font-size: 7px;
+  color: #FF6000;
+  margin-top: 8rpx;
+  float: right;
+}
+.info-L {
+  float: left;
+}
+.info-title1 {
+  font-size: 18rpx;
+  font-weight: 600;
+  margin-top: 22rpx;
+  margin-bottom: 16rpx;
+}
+.info-title2 {
+  font-size: 18rpx;
+  font-weight: 600;
+  margin-top: 40rpx;
+  margin-bottom: 22rpx;
+}
+.info-title3 {
+  font-size: 18rpx;
+  font-weight: 600;
+  margin-top: 30rpx;
+  margin-bottom: 22rpx;
+}
+.info-info {
+  font-size: 14rpx;
+  margin-top: 18rpx;
+  color: #8A8A8A;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 400rpx;
+  height: 60rpx;
+}
+
+/* 课程目录 */
+.classDirectory {
+  margin-left: 44rpx;
+  height: 114px;
+  width: 660rpx;
+  border-top: 2rpx solid rgba(198, 198, 198, 0.411);
+}
+.classDirectory .outline {
+  width: 100%;
+  height: 33.3333%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.outline:first-child .outline-L {
+  font-size: 16rpx;
+  color: #333333;
+  font-weight: 600;
+}
+.classDirectory .outline:nth-child(2),
+.classDirectory .outline:nth-child(3) {
+  margin-left: 26rpx;
+  width: 600rpx;
+}
+.outline:nth-child(2) .outline-L,
+.outline:last-child .outline-L {
+  font-size: 16rpx;
+  color: rgba(138, 138, 138, 0.253);
+}
+.outline:nth-child(2) .outline-R,
+.outline:nth-child(3) .outline-R {
+  font-size: 14rpx;
+  color: #FF6800;
+}
+.classDirectory .outline image {
+  width: 12rpx;
+  height: 8rpx;
+  margin-right: 4rpx;
+}
+.classDirectory .outline .outline-L {
+  font-size: 16rpx;
+  color: #333333;
+}

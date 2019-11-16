@@ -1,0 +1,101 @@
+<!--index.wxml-->
+<!-- 轮播图 -->
+<swiper autoplay interval='{{interval}}' duration='{{duration}}' indicator-dots indicator-active-color='{{activeColor}}'>
+  <block wx:for="{{showFlash}}" wx:key="u">
+    <swiper-item bindtap="swiper" id="{{index}}">
+      <image src="{{item.img}}" bindtap="toArticle" data-link="{{item.param}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 图标导航栏 -->
+<view class="nav-1">
+  <view class="icon" bindtap="allInfo">
+    <image class="icon-img" src='../../../images/icon/orange.png'></image>
+    <view class="icon-title">面试</view>
+    <image class="icon-img-txt" src="../../../images/icon/interview.png"></image>
+  </view>
+  <view class="icon" bindtap="allInfo1">
+    <image class="icon-img" src='../../../images/icon/green.png'></image>
+    <view class="icon-title">笔试</view>
+    <image class="icon-img-txt" src="../../../images/icon/record.png"></image>
+  </view>
+  <view class="icon" bindtap="question">
+    <image class="icon-img" src='../../../images/icon/orange.png'></image>
+    <view class="icon-title">题库</view>
+    <image class="icon-img-txt" src="../../../images/icon/question.png"></image>
+  </view>
+  <view class="icon">
+    <image class="icon-img" src="../../../images/icon/purple.png"></image>
+    <view class="icon-title">客服</view>
+    <button open-type="contact"></button>
+    <image class="icon-img-txt1" src="../../../images/icon/shop.png"></image>
+  </view>
+</view>
+<!-- 课程、资讯导航栏 -->
+<view class="nav-2">
+  <view class="nav-2-left" bindtap="allTutorClass">
+    <view class="textL">全部课程</view>
+    <image class="L-ellipse" src="../../../images/icon/ellipse.png"></image>
+    <image class="book" src="../../../images/book.png"></image>
+    <image class="R-ellipse" src="../../../images/icon/ellipse.png"></image>
+  </view>
+  <view class="nav-2-right" bindtap="information">
+    <view class="textR">入学咨询</view>
+    <image class="L-ellipse" src="../../../images/icon/ellipse.png"></image>
+    <image class="people" src="../../../images/kefu.png"></image>
+    <image class="R-ellipse" src="../../../images/icon/ellipse.png"></image>
+  </view>
+</view>
+<!-- 辅导课程 -->
+<view class="course">
+  <view class="square"></view>
+  <view class="tutor-class">辅导课程</view>
+  <view class="all" bindtap="allTutorClass">全部</view>
+  <view class="clearfix"></view>
+  <block wx:for="{{showCurriculum}}" wx:key="item.id">
+    <view class="video" data-id="{{item.id}}" data-free="{{item.free}}" bindtap="vedioDetail">
+      <image class="video-play" src='../../../images/information/video-play.png'></image>
+      <image class="video-img" src='{{item.banner}}'></image>
+      <view class="video-title">{{item.name}}</view>
+      <view class="video-bottom">
+        <image class="video-icon" src="../../../images/tabbar-icon/me.png"></image>
+        <view class="video-watch">{{item.click}}人已观看</view>
+        <view class="video-free" wx:if="{{item.free=='1'}}">免费</view>
+        <view class="video-free" wx:if="{{item.free=='0'}}">未购买</view>
+        <view class="video-free" wx:if="{{item.free == 'a'}}">免费</view>
+        <view class="video-free" wx:if="{{item.free == 'b'}}">已购买</view>
+        <view class="video-free" wx:if="{{item.free == 'c'}}">未购买</view>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 动态资讯 -->
+<view class="information">
+  <view class="square"></view>
+  <view class="tutor-class">动态资讯</view>
+  <view class="all" bindtap="allInfo">全部</view>
+  <view class="clearfix"></view>
+  <block wx:for="{{showInfo}}" wx:key="item.id">
+    <view class="info-content" data-id="{{item.id}}" bindtap="dynamicInfo">
+      <image class="info-image" src="{{item.banner}}"></image>
+      <view class="info-R">
+        <view class="info-title">{{item.title}}</view>
+        <view class="info-info"></view>
+        <view class="info-L">
+          <image class="video-icon" src="../../../images/tabbar-icon/me.png"></image>
+          <view class="video-watch">{{item.click}}人已阅读</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 底部区域 -->
+<view class="footer">
+  <image class="footer-img" src="../../../images/footer.png"></image>
+  <view class="footer-text">
+    <view class="f-text">勤勉</view>
+    <view class="f-text">诚信</view>
+    <view class="f-text">利他</view>
+    <view class="f-text">共赢</view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="mark">
+  <view class="contact">
+    <view class="contact-T">
+      <view class="txt">客服</view>
+      <view class="txt">客服联系电话：18515218052/17310850257</view>
+    </view>
+    <view class="contact-B">
+      <view class="txt">联系客服</view>
+    </view>
+  </view>
+</view>

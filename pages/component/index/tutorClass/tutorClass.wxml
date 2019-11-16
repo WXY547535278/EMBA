@@ -1,0 +1,62 @@
+<!-- 动态资讯 -->
+<view class="information">
+  <view class="info-content" bindtap="freeClass" data-id="{{item.id}}" wx:for="{{freeClass}}" wx:key="{{item.key}}">
+    <image class="info-image" src="{{item.banner}}"></image>
+    <view class="content-L">
+      <view class="info-title">{{item.name}}</view>
+      <view class="info-info">{{item.introduce}}</view>
+      <view class="info-L">
+        <image class="video-icon" src="../../../../images/tabbar-icon/me.png"></image>
+        <view class="video-watch">{{item.click}}已观看</view>
+      </view>
+      <!-- <view class="info-R">
+        <view class="date">2019-07-27</view>
+      </view> -->
+    </view>
+    <view class="content-R1">免费</view>
+  </view>
+  <view class="info-content" bindtap="nonpay" wx:for="{{nonepayClass}}" wx:key="{{item.key}}">
+    <image class="info-image" src="{{item.banner}}"></image>
+    <view class="content-L">
+      <view class="info-title">{{item.name}}</view>
+      <view class="info-info">{{item.introduce}}</view>
+      <view class="info-L">
+        <image class="video-icon" src="../../../../images/tabbar-icon/me.png"></image>
+        <view class="video-watch">{{item.click}}人已观看</view>
+      </view>
+      <!-- <view class="info-R">
+        <view class="date">2019-07-27</view>
+      </view> -->
+    </view>
+    <view class="content-R2">
+    <image src="../../../../images/lock-close.png"></image>
+    </view>
+  </view>
+  <view class="info-content" bindtap="freeClass" data-id="{{item.id}}" wx:for="{{payClass}}" wx:key="{{item.key}}">
+    <image class="info-image" src="{{item.banner}}"></image>
+    <view class="content-L">
+      <view class="info-title">{{item.name}}</view>
+      <view class="info-info">{{item.introduce}}</view>
+      <view class="info-L">
+        <image class="video-icon" src="../../../../images/tabbar-icon/me.png"></image>
+        <view class="video-watch">{{item.click}}人已观看</view>
+      </view>
+      <!-- <view class="info-R">
+        <view class="date">2019-07-27</view>
+      </view> -->
+    </view>
+    <view class="content-R3">
+    <image src="../../../../images/lock-open.png"></image>
+    </view>
+  </view>
+</view>
+<!-- 底部区域 -->
+<view class="footer">
+  <image class="footer-img" src="../../../../images/footer.png"></image>
+  <view class="footer-text">
+    <view class="f-text">利他</view>
+    <view class="f-text">勤勉</view>
+    <view class="f-text">诚信</view>
+    <view class="f-text">共赢</view>
+  </view>
+</view>

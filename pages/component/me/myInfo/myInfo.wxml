@@ -1,0 +1,56 @@
+<view class="center">
+  <view class="myInfo-list" bindtap="updateHead">
+    <view class="myInfo-txt">头像</view>
+    <image class="head" src="{{UserInfo.headImg}}"></image>
+  </view>
+  <view class="myInfo-list" data-name="nickName" bindtap="updateInfo">
+    <view class="myInfo-txt">昵称</view>
+    <view class="myInfo-txt">{{UserInfo.nickName}}</view>
+  </view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{sex}}">
+    <view class="myInfo-list" data-name="sex">
+      <view class="myInfo-txt">性别</view>
+      <view class="myInfo-txt">{{UserInfo.sex}}
+        <image src="../../../../images/me/arrow.png"></image>
+      </view>
+    </view>
+  </picker>
+  <view class="myInfo-list" data-name="name" bindtap="updateInfo">
+    <view class="myInfo-txt">真实姓名</view>
+    <view class="myInfo-txt">{{UserInfo.name}}
+      <image src="../../../../images/me/arrow.png"></image>
+    </view>
+  </view>
+  <view class="myInfo-list" data-name="phone" bindtap="updateInfo">
+    <view class="myInfo-txt">手机号</view>
+    <view class="myInfo-txt">{{UserInfo.phone}}
+      <image src="../../../../images/me/arrow.png"></image>
+    </view>
+  </view>
+  <picker mode="date" value="{{date}}" start="1900-00-00" end="2100-00-00" bindchange="bindDateChange">
+    <view class="myInfo-list" data-name="birthday">
+      <view class="myInfo-txt">生日</view>
+      <view class="myInfo-txt">{{birthday}}
+        <image src="../../../../images/me/arrow.png"></image>
+      </view>
+    </view>
+  </picker>
+  <view class="myInfo-list" data-name="address" bindtap="updateInfo">
+    <view class="myInfo-txt">地址</view>
+    <view class="myInfo-txt">{{UserInfo.address}}
+      <image src="../../../../images/me/arrow.png"></image>
+    </view>
+  </view>
+  <view class="myInfo-list" data-name="company" bindtap="updateInfo">
+    <view class="myInfo-txt">公司</view>
+    <view class="myInfo-txt">{{UserInfo.company}}
+      <image src="../../../../images/me/arrow.png"></image>
+    </view>
+  </view>
+  <view class="myInfo-list" data-name="position" bindtap="updateInfo">
+    <view class="myInfo-txt">职位</view>
+    <view class="myInfo-txt">{{UserInfo.position}}
+      <image src="../../../../images/me/arrow.png"></image>
+    </view>
+  </view>
+</view>

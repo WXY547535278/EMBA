@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/tabbar/tabbar",
+    "pages/component/index/service/service",
+    "pages/component/index/dynamicInfo/dynamicInfo",
+    "pages/component/index/information1/information1",
+    "pages/component/index/tutorClass/Nonpayment/Nonpayment",
+    "pages/component/index/tutorClass/classDetail/classDetail",
+    "pages/component/index/tutorClass/tutorClass",
+    "pages/component/index/question/question",
+    "pages/component/index/question/details/details",
+    "pages/component/information/detail/detail",
+    "pages/component/information/subject/subject",
+    "pages/component/information/information",
+    "pages/component/index/allDynamicInfo/allDynamicInfo",
+    "pages/component/me/myInfo/updateInfo/updateInfo",
+    "pages/component/me/myInfo/myInfo",
+    "pages/component/me/classRecord/classRecord",
+    "pages/component/me/payClass/payClass",
+    "pages/component/index/entrance/entrance",
+    "pages/component/index/entrance/assessment/assessment",
+    "pages/template/footer/footer",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#006CFF",
+    "navigationBarTitleText": "EMBA那些事儿",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

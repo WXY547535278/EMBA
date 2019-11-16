@@ -1,0 +1,21 @@
+<view class="content" wx:for="{{showQuestion}}" wx:key="{{item.key}}">
+  <view class="question" bindtap="details" data-id="{{item.id}}">
+    <view class="left">
+      <view class="title">{{item.title}}</view>
+    </view>
+    <view class="right">
+      <view class="click">{{item.click}}人已阅读</view>
+      <image src="../../../../images/tabbar-icon/me.png"></image>
+    </view>
+  </view>
+</view>
+<!-- 底部区域 -->
+<view class="footer">
+  <image class="footer-img" src="../../../../images/footer.png"></image>
+  <view class="footer-text">
+    <view class="f-text">勤勉</view>
+    <view class="f-text">诚信</view>
+    <view class="f-text">利他</view>
+    <view class="f-text">共赢</view>
+  </view>
+</view>

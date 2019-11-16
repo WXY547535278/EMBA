@@ -1,0 +1,12 @@
+<!--pages/template/footer/footer.wxml-->
+<template name="foot">
+  <view class="footer">
+    <image class="footer-img" src="../../images/footer.png"></image>
+    <view class="footer-text">
+      <view class="f-text">利他</view>
+      <view class="f-text">勤勉</view>
+      <view class="f-text">诚信</view>
+      <view class="f-text">共赢</view>
+    </view>
+  </view>
+</template>

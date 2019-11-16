@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "component_index": "/pages/component/index/index",
+    "component_information": "/pages/component/information/information",
+    "component_hot": "/pages/component/hot/hot",
+    "component_me": "/pages/component/me/me"
+  }
+}

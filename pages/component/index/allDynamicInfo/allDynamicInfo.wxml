@@ -1,0 +1,30 @@
+<view class="content">
+      <scroll-view scroll-y="{{true}}" style="height: {{deviceH?deviceH*2+'rpx':'auto'}}" bindscrolltolower="scrollbot">
+        <view class="information">
+          <block wx:for="{{img.vedioImg}}" wx:key="u">
+            <view class="info-content" bindtap="details">
+              <!-- <image class="video-play" src="../../../images/information/video-play.png"></image> -->
+              <image class="info-image" src="{{item}}"></image>
+              <view class="info-R">
+                <view class="info-title">如何备考重点院校EMBA？</view>
+                <view class="info-info">如何备考重点院校EMBA，如何备考重点院校EMBA，如何备考重点院校EMBA， 如何备考重点院校EMBA，如何备考重点院校EM</view>
+                <view class="info-L">
+                  <image class="video-icon" src="../../../images/tabbar-icon/me.png"></image>
+                  <view class="video-watch">568人已阅读</view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+  <!-- 底部区域 -->
+  <view class="footer">
+    <image class="footer-img" src="../../../images/footer.png"></image>
+    <view class="footer-text">
+      <view class="f-text">利他</view>
+      <view class="f-text">勤勉</view>
+      <view class="f-text">诚信</view>
+      <view class="f-text">共赢</view>
+    </view>
+  </view>
+</view>

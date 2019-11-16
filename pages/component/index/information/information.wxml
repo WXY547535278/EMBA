@@ -1,0 +1,85 @@
+<view class="content">
+  <view class="swiper-tab">
+    <block wx:for="{{swipertab}}" wx:key="sptab">
+      <view class="swiper-tab-list {{currtab == item.index ? 'on' : ''}}" data-current="{{item.index}}" bindtap="tabSwitch">{{item.name}}</view>
+    </block>
+  </view>
+  <swiper current="{{currtab}}" class="swiper-box" duration="300" style="height: {{deviceH?deviceH*2+'rpx':'auto'}}" bindchange="tabChange">
+    <!-- 面试区域  -->
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" style="height: {{deviceH?deviceH*2+'rpx':'auto'}}" bindscrolltolower="scrollbot">
+        <view class="information">
+          <!-- 面试区域 -->
+          <block wx:for="{{showInterview}}" wx:key="u">
+            <view class="info-content" data-id="{{item.id}}" bindtap="subject">
+              <!-- <image class="video-play" src="../../../images/information/video-play.png"></image> -->
+              <image class="info-image" src="{{item.banner}}"></image>
+              <view class="info-R">
+                <view class="info-title">{{item.title}}</view>
+                <view class="info-info"></view>
+                <view class="info-L">
+                  <image class="video-icon" src="../../../../images/tabbar-icon/me.png"></image>
+                  <view class="video-watch">{{item.click}}人已阅读</view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 动态资讯区域 -->
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" style="height: {{deviceH?deviceH*2+'rpx':'auto'}}" bindscrolltolower="scrollbot">
+        <view class="information">
+          <!-- 动态资讯区域 -->
+          <block wx:for="{{showInfo}}" wx:key="u">
+            <view class="info-content" data-id="{{item.id}}" bindtap="dynamicInfo">
+              <!-- <image class="video-play" src="../../../images/information/video-play.png"></image> -->
+              <image class="info-image" src="{{item.banner}}"></image>
+              <view class="info-R">
+                <view class="info-title">{{item.title}}</view>
+                <view class="info-info"></view>
+                <view class="info-L">
+                  <image class="video-icon" src="../../../../images/tabbar-icon/me.png"></image>
+                  <view class="video-watch">{{item.click}}人已阅读</view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 笔试区域 -->
+    <swiper-item>
+      <scroll-view scroll-y="{{true}}" style="height: {{deviceH?deviceH*2+'rpx':'auto'}}" bindscrolltolower="scrollbot">
+        <view class="information">
+          <!-- 笔试区域 -->
+          <block wx:for="{{showWrite}}" wx:key="u">
+            <view class="info-content" data-id="{{item.id}}" bindtap="subject">
+              <!-- <image class="video-play" src="../../../images/information/video-play.png"></image> -->
+              <image class="info-image" src="{{item.banner}}"></image>
+              <view class="info-R">
+                <view class="info-title">{{item.title}}</view>
+                <view class="info-info"></view>
+                <view class="info-L">
+                  <image class="video-icon" src="../../../../images/tabbar-icon/me.png"></image>
+                  <view class="video-watch">{{item.click}}人已阅读</view>
+                </view>
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+  <!-- 底部区域 -->
+  <view class="footer">
+    <image class="footer-img" src="../../../../images/footer.png"></image>
+    <view class="footer-text">
+      <view class="f-text">勤勉</view>
+      <view class="f-text">诚信</view>
+      <view class="f-text">利他</view>
+      <view class="f-text">共赢</view>
+    </view>
+  </view>
+</view>

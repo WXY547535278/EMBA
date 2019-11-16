@@ -1,0 +1,43 @@
+/* 遮罩成 */
+page {
+  background-color: rgba(128, 128, 128, 0.13);
+}
+.mark .contact {
+  width: 668rpx;
+  height: 308rpx;
+  background-color: #FFFFFF;
+  border-radius: 6rpx;
+  margin-top: 220rpx;
+  margin-left: 44rpx;
+}
+.mark .contact .contact-T {
+  box-sizing: border-box;
+  height: 220rpx;
+  width: 100%;
+  border-bottom: 2rpx solid rgba(188, 188, 188, 0.479);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mark .contact .contact-T .txt:first-child{
+  margin-top: 62rpx;
+  font-size: 10px;
+  color: #000000;
+  font-weight: 600;
+}
+.mark .contact .contact-T .txt:last-child {
+  font-size: 18rpx;
+  color:#343434;
+  margin-top: 32rpx;
+}
+.mark .contact .contact-B {
+  display: flex;
+  justify-content: center;
+}
+.mark .contact .contact-B .txt {
+  font-size: 22rpx;
+  color: #FF0000;
+  font-weight: 600;
+  margin-top: 30rpx;
+}

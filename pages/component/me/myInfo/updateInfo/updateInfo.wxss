@@ -1,0 +1,32 @@
+/* pages/me/myInfo/updateInfo/updateInfo.wxss */
+page {
+  background-color: #F0F0F0;
+}
+input {
+  background-color: #FFFFFF;
+  margin-top: 14rpx;
+  height: 64rpx;
+  padding-left: 62rpx;
+  line-height: 64rpx;
+  font-size: 18rpx;
+  color: #696969
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+.button .cancel,
+.button .submit {
+  width: 298rpx;
+  height: 58rpx;
+  font-size: 18rpx;
+  line-height: 58rpx;
+  color: #FFFFFF;
+  margin-top: 26rpx;
+}
+.button .cancel {
+  background-color: #B8B8B8;
+}
+.button .submit {
+  background-color: #FC540A;
+}

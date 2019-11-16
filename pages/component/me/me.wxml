@@ -1,0 +1,54 @@
+<!--pages/me/me.wxml-->
+<view class="round"></view>
+<view class="me-head">
+  <view class="me-name-email">
+    <image src="{{User.headImg}}"></image>
+    <view class="me-name">{{User.nickName}}</view>
+    <!-- <view class="login" wx:if="{{loginShow}}" bindtap="login">登录</view> -->
+    <button open-type="getUserInfo" wx:if="{{loginShow}}" type="primary" bindgetuserinfo="getMyUserInfo">登录</button>
+  </view>
+</view>
+<view class="me-info">
+  <view class="me-info-list" bindtap="myInfo">
+    <view class="me-info-L">
+      <image class="icon-txt" src="../../../images/icon/personal.png"></image>
+      <image class="icon-img" src="../../../images/me/orange.png"></image>
+      <view class="txt">个人信息</view>
+    </view>
+    <view class="me-info-R">
+      <image src="../../../images/me/arrow.png"></image>
+    </view>
+  </view>
+  <view class="me-info-list" bindtap="classRecord">
+    <view class="me-info-L">
+      <image class="icon-txt" src="../../../images/icon/class.png"></image>
+      <image class="icon-img" src="../../../images/me/purple.png"></image>
+      <view class="txt">我的听课记录</view>
+    </view>
+    <view class="me-info-R">
+      <image src="../../../images/me/arrow.png"></image>
+    </view>
+  </view>
+  <!-- <view class="me-info-list" bindtap="service"> -->
+  <view class="me-info-list">
+    <view class="me-info-L">
+      <image class="icon-img" src="../../../images/me/blue.png"></image>
+      <image class="icon-txt" src="../../../images/icon/kefu.png"></image>
+      <view class="txt">客服</view> 
+    </view>
+    <button open-type="contact" style="width:1000rpx;background-color:white"></button>
+    <view class="me-info-R">
+      <image src="../../../images/me/arrow.png"></image>
+    </view>
+  </view>
+  <view class="me-info-list" bindtap="payClass">
+    <view class="me-info-L">
+      <image class="icon-img" src="../../../images/me/red.png"></image>
+      <image class="icon-txt" src="../../../images/icon/payclass.png"></image>
+      <view class="txt">购买的课程</view>
+    </view>
+    <view class="me-info-R">
+      <image src="../../../images/me/arrow.png"></image>
+    </view>
+  </view>
+</view>

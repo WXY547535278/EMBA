@@ -1,0 +1,35 @@
+<!-- 顶部区域 -->
+<view class="content">
+  <video src="{{src}}" poster="../../../../../images/video.png" controls></video>
+</view>
+
+<!-- 切换栏区域 -->
+<view class="swiper-tab">
+  <block wx:for="{{swipertab}}" wx:key="sptab">
+    <view class="swiper-tab-list {{currtab == item.index ? 'on' : ''}}" data-current="{{item.index}}" bindtap="tabSwitch">{{item.name}}</view>
+  </block>
+</view>
+<swiper current="{{currtab}}" class="swiper-box" duration="300" style="height:500px">
+  <swiper-item>1
+  </swiper-item>
+  <swiper-item>2
+  </swiper-item>
+  <swiper-item>
+    <view class="information">
+    <block wx:for="{{img.vedioImg}}" wx:key="u">
+      <view class="info-content" bindtap="details">
+        <image class="info-image" src="{{item}}"></image>
+        <view class="info-R">
+          <view class="info-title">如何备考重点院校EMBA？</view>
+          <view class="info-info">如何备考重点院校EMBA，如何备考重点院校EMBA，如何备考重点院校EMBA， 如何备考重点院校EMBA，如何备考重点院校EM</view>
+          <view class="info-L">
+            <image class="video-icon" src="../../../../images/tabbar-icon/me.png"></image>
+            <view class="video-watch">568人已阅读</view>
+            <view class="video-deta">2019-07-25</view>
+          </view>
+        </view>
+      </view>
+    </block>
+    </view>
+  </swiper-item>
+</swiper>

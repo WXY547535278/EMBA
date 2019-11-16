@@ -1,0 +1,12 @@
+<!--pages/component/index/dynamicInfo/dynamicInfo.wxml-->
+<import src="../../../../../wxParse/wxParse.wxml" />
+<view class="contain">
+  <view class="title">{{showInfo.title}}</view>
+  <view class="content">
+    <!-- <image src="{{item.banner}}"></image> -->
+    <!-- <text>{{showInfo.text}}</text> -->
+    <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:info.nodes}}" />
+    </view>
+  </view>
+</view>

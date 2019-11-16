@@ -1,0 +1,106 @@
+/* pages/me/me.wxss */
+page {
+  background-color: #F0F0F0;
+  position: relative;
+}
+.round {
+  width: 1000rpx;
+  height: 800rpx;
+  background-color: #0176FE;
+  border-radius: 50%;
+  transform: translateY(-55%) translateX(-134rpx);
+}
+.me-name-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.me-head {
+  width: 706rpx;
+  height: 260rpx;
+  background-color: #FFFFFF;
+  border-radius: 8rpx;
+  position: absolute;
+  top: 104rpx;
+  left: 24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.me-head .me-name {
+  font-size: 20rpx;
+  color: #010101;
+  font-weight: 600;
+  margin-top: 22rpx;
+}
+.me-head image {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.me-info {
+  width: 706rpx;
+  height: 256rpx;
+  background-color: #FFFFFF;
+  border-radius: 8rpx;
+  position: absolute;
+  top: 376rpx;
+  left: 24rpx;
+}
+.me-info-list {
+  width: 100%;
+  height: 62rpx;
+  border-bottom: 2rpx solid #D3D3D3;
+  display: flex;
+  justify-content: space-between;
+}
+.me-info-list:last-child {
+  border-bottom: 0;
+}
+.me-info .me-info-L {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+.me-info .me-info-L .icon-img {
+  width: 38rpx;
+  height: 38rpx;
+  margin-top: 16rpx;
+  margin-left: 10rpx;
+}
+.me-info-L .icon-txt {
+  width: 19rpx;
+  height: 19rpx;
+  margin-top: 22rpx;
+  margin-left: 10rpx;
+  transform: translateX(10rpx) translateY(4rpx);
+  position: absolute;
+  z-index: 10;
+}
+.me-info .me-info-L .txt {
+  font-size: 24rpx;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 18rpx;
+  margin-left: 20rpx;
+}
+.me-info .me-info-R image {
+  width: 12rpx;
+  height: 18rpx;
+  margin-top: 22rpx;
+  margin-right: 8rpx;
+}
+
+/* 客服(去除button变宽) */
+.me-info-list button::after{
+  border: none;  
+}
+
+.login {
+  text-decoration: underline;
+  font-size: 40rpx;
+  color: blue;
+  font-weight: 600;
+}

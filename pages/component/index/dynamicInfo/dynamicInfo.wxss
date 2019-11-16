@@ -1,0 +1,60 @@
+/* pages/component/index/dynamicInfo/dynamicInfo.wxss */
+@import "/wxParse/wxParse.wxss";
+page {
+  background-color: #F0F0F0;
+}
+/* 修改富文本框中文字图片居中的样式 */
+.ql-align-center {
+  text-align: center;
+}
+.ql-align-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.contain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rpx;
+}
+.title {
+  width: 740rpx;
+  min-height: 80rpx;
+  margin-top: 20rpx;
+  background-color: #FFFFFF;
+  font-size: 28rpx;
+  font-weight: 600;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 740rpx;
+  min-height: 1000rpx;
+  margin-top: 20rpx;
+  background-color: #FFFFFF;
+  color: gray;
+  font-size: 20rpx;
+  border-radius: 10rpx;
+  display: flex;
+  padding-top: 4rpx;
+  flex-direction: column;
+}
+.content image {
+  width: 100%;
+  height: 400rpx;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+.content text {
+  margin: 20rpx 20rpx;
+  font-size: 30rpx;
+}
+.wxParse {
+  box-sizing: border-box;
+  padding: 10rpx;
+  font-size: 26rpx;
+  font-weight: 500;
+}

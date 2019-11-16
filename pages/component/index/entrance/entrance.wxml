@@ -1,0 +1,36 @@
+<import src="../../template/footer/footer.wxml" />
+<view class="head-info">了解适合自己的项目；准确定位自己，客观判断申请项目的成功概率,我们老师可以帮 您评估一下您的EMBA入学分析！</view>
+<block wx:for="{{showTeacher}}" wx:key="item.id">
+  <view class="teacher">
+    <view class="teacher-top">
+      <view class="teacher-top-L">
+        <view class="t-name">{{item.name}}</view>
+        <view class="t-info">
+          <image src="../../../../images/information/wx.png"></image><text>{{item.wechat}}</text></view>
+        <view class="t-info">
+          <image src="../../../../images/information/phone.png"></image>{{item.phone}}</view>
+        <view class="t-info">
+          <image src="../../../../images/information/email.png"></image>{{item.mail}}</view>
+      </view>
+      <view class="teacher-top-R">
+        <image src="{{item.headImg}}"></image>
+      </view>
+    </view>
+    <view class="teacher-bottom">
+      <view class="teacher-bottom-L" bindtap="phone" data-tel="{{item.phone}}">
+        <image src="../../../../images/information/phone.png"></image>打电话</view>
+      <view class="teacher-bottom-R" bindtap="assessment" data-id="{{item.id}}">
+        <image src="../../../../images/information/assessment.png"></image>入学评估</view>
+    </view>
+  </view>
+</block>
+<!-- 底部区域 -->
+<view class="footer">
+  <image class="footer-img" src="../../../../images/footer.png"></image>
+  <view class="footer-text">
+    <view class="f-text">利他</view>
+    <view class="f-text">勤勉</view>
+    <view class="f-text">诚信</view>
+    <view class="f-text">共赢</view>
+  </view>
+</view>

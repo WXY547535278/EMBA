@@ -1,0 +1,26 @@
+/* pages/template/footer/footer.wxss */
+.footer {
+  width: 100%;
+}
+.footer-img {
+  width: 306rpx;
+  height: 78rpx;
+  margin: 0 auto;
+  margin-top: 52rpx;
+  margin-left: 208rpx;
+}
+.footer-text {
+  font-size: 24rpx;
+  color: #B8B6B6;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 24rpx;
+  padding-bottom: 38rpx;
+  margin-left: 176rpx;
+}
+.f-text:first-child {
+  margin-left: 0;
+}
+.f-text {
+  margin-left: 64rpx;
+}

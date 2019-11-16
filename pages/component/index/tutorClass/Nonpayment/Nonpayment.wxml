@@ -1,0 +1,91 @@
+<!-- 遮罩成 -->
+<view class="mark">
+  <view class="nonbuy">
+    <view class="nonbuy-T">
+      <view class="txt">课程购买</view>
+      <view class="txt">你还未购买该课程</view>
+      <view class="txt">联系客服购买课程</view>
+    </view>
+    <view class="nonbuy-B">
+      <view class="txt" bindtap="tel">客服电话一：{{phone}}</view>
+      <view class="txt" bindtap="tel1">客服电话二：{{phone1}}</view>
+    </view>
+  </view>
+</view>
+<!-- 顶部区域 -->
+<view class="content">
+  <image class="video-play-head" src="../../../../../images/information/video-play.png"></image>
+  <image src="" class="image-head"></image>
+</view>
+<!-- 切换栏区域 -->
+<view class="swiper-tab">
+  <block wx:for="{{swipertab}}" wx:key="sptab">
+    <view class="swiper-tab-list {{currtab == item.index ? 'on' : ''}}" data-current="{{item.index}}" bindtap="tabSwitch">{{item.name}}</view>
+  </block>
+</view>
+<swiper current="{{currtab}}" class="swiper-box" duration="300" style="height:500px">
+  <!-- 课程简介 -->
+  <swiper-item>
+    <view class="info-content">
+      <view class="content-L">
+        <view class="info-title1">如何备考重点院校EMBA？</view>
+        <view class="info-L">
+          <image class="video-icon" src="../../../../../images/tabbar-icon/me.png"></image>
+          <view class="video-watch">568人已观看</view>
+        </view>
+        <view class="info-R">
+          <view class="free"></view>
+        </view>
+      </view>
+    </view>
+    <view class="info-content">
+      <view class="content-L">
+        <view class="info-title2">课程概况</view>
+      </view>
+    </view>
+    <view class="info-content">
+      <view class="content-L">
+        <view class="info-title3">课程介绍</view>
+      </view>
+    </view>
+  </swiper-item>
+  <!-- 课程目录 -->
+  <swiper-item>
+    <view class="classDirectory">
+      <view class="outline">
+        <view class="outline-L">第一章：大纲解析基础</view>
+        <view class="outline-R">
+          <image src="../../../../../images/down.png"></image>
+        </view>
+      </view>
+      <view class="outline">
+        <view class="outline-L">1、大纲解析基础</view>
+        <view class="outline-R">点击观看</view>
+      </view>
+      <view class="outline">
+        <view class="outline-L">2、大纲解析基础</view>
+        <view class="outline-R">点击观看</view>
+      </view>
+    </view>
+    <view class="classDirectory">
+      <view class="outline">
+        <view class="outline-L">第一章：大纲解析基础</view>
+        <view class="outline-R">
+          <image src="../../../../../images/down.png"></image>
+        </view>
+      </view>
+      <view class="outline">
+        <view class="outline-L">1、大纲解析基础</view>
+        <view class="outline-R">点击观看</view>
+      </view>
+      <view class="outline">
+        <view class="outline-L">2、大纲解析基础</view>
+        <view class="outline-R">点击观看</view>
+      </view>
+    </view>
+  </swiper-item>
+
+  <!-- 相关课程 -->
+  <swiper-item>3
+  </swiper-item>
+</swiper>

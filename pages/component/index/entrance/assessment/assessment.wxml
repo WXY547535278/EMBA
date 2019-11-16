@@ -1,0 +1,74 @@
+<!--pages/information/information.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="test-info">
+    本测评基于34所顶级商学院材料审核标准，1300余位成功申请学员材料深度分析而得出，帮助 考生明确定位其在申请中的优秀程度，希本测评基于34所顶级商学院材料审核标准，1300余位成功申请学员材料深度分析而得出，帮助 考生明确定位其在申请中的优秀程度，希
+  </view>
+  <view class="info-input">
+    <view class="text">您的名字</view>
+    <input type="text" name="name" value="" placeholder="请输入姓名"></input>
+  </view>
+  <view class="info-input">
+    <view class="text">您的手机号码</view>
+    <input type="text" name="phone" value="" maxlength="11" placeholder="请输入手机号"></input>
+  </view>
+  <view class="info-input">
+    <view class="text">教育背景</view>
+    <input type="text" name="education" value="" placeholder="请输入学历"></input>
+  </view>
+  <view class="info-input">
+    <view class="text">年龄</view>
+    <input type="text" name="age" value="" placeholder="请输入年龄"></input>
+  </view>
+  <view class="info-input">
+    <view class="text">当前职务</view>
+    <view class="info-radio">
+      <radio-group name="duties">
+        <view class="radio-L">
+          <radio value='企业主'>企业主</radio>
+          <radio value='中管'>中管</radio>
+        </view>
+        <view class="radio-R">
+          <radio value='高管'>高管</radio>
+          <radio value='其他'>其他</radio>
+        </view>
+      </radio-group>
+    </view>
+  </view>
+  <view class="info-input">
+    <view class="text">工龄</view>
+    <view class="info-radio">
+    <radio-group name="workingYears">
+        <view class="radio-L">
+          <radio value='3-7年'>3-7年</radio>
+          <radio value='7-10年'>7-10年</radio>
+        </view>
+        <view class="radio-R">
+          <radio value='10年以上'>10年以上</radio>
+        </view>
+      </radio-group>
+    </view>
+  </view>
+  <view class="info-input">
+    <view class="text">单位性质</view>
+    <view class="info-radio1">
+    <radio-group name="company">
+        <view class="radio-L">
+          <radio value='国有/国有控股企业'>国有/国有控股企业</radio>
+          <radio value='外/合资企业'>外/合资企业</radio>
+          <radio value='创业'>创业</radio>
+        </view>
+        <view class="radio-R">
+          <radio value='民营企业'>民营企业</radio>
+          <radio value='政府机关/事业单位'>政府机关/事业单位</radio>
+          <radio value='其他'>其他</radio>
+        </view>
+      </radio-group>
+    </view>
+  </view>
+  <view class="info-input">
+    <view class="text">需要查询的问题</view>
+    <textarea class="info-radio1" name="problem"></textarea>
+    <view class="text1">稍后我们会给您回电，请留意，谢谢使用！</view>
+  </view>
+  <button form-type="submit">提交</button>
+</form>

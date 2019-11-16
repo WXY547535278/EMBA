@@ -1,0 +1,80 @@
+/* pages/component/index/question/question.wxss */
+
+page {
+  background-color: #f0f0f0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6rpx;
+  width: 100%;
+}
+
+.question {
+  width: 730rpx;
+  height: 120rpx;
+  background-color: white;
+  margin-top: 20rpx;
+  box-shadow: 4rpx 4rpx 8rpx gray;
+  display: flex;
+  align-items: center;
+  border-radius: 16rpx;
+  justify-content: space-between;
+}
+.left {
+  margin-left: 20rpx;
+  width: 400rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.title {
+  font-family: 'LiSu';
+  font-weight: 600;
+  color: rgba(0, 102, 255, 0.795);
+}
+.right {
+  margin-right: 20rpx;
+}
+image {
+  float: right;
+  width: 28rpx;
+  height: 24rpx;
+  transform: translateY(4rpx);
+  margin-right: 6rpx;
+}
+.click {
+  float: right;
+  font-size: 24rpx;
+  color: #8A8A8A;
+}
+/* 底部区域 */
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50rpx;
+  flex-direction: column;
+}
+.footer-img {
+  width: 306rpx;
+  height: 78rpx;
+  margin: 0 auto;
+}
+.footer-text {
+  font-size: 24rpx;
+  color: #B8B6B6;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 24rpx;
+  padding-bottom: 38rpx;
+  margin-bottom: 70rpx;
+  margin-left: 176rpx;
+}
+.f-text:first-child {
+  margin-left: 0;
+}
+.f-text {
+  margin-left: 64rpx;
+}

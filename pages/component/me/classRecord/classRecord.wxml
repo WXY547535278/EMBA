@@ -1,0 +1,24 @@
+<!-- 动态资讯 -->
+<view class="information">
+  <view class="info-content" wx:for="{{record}}" wx:key="{{item.id}}">
+    <image class="info-image" src="{{item.curriculumBanner}}"></image>
+    <view class="content-L" bindtap="freeClass" data-id="{{item.curriculumId}}">
+      <view class="info-title">{{item.curriculumName}}</view>
+      <view class="info-info"></view>
+      <view class="info-L">
+        <view class="video-day">{{item.day}}</view>
+      </view>
+    </view>
+    <view class="content-R3" bindtap="deleteRecord" data-id="{{item.id}}">删除</view>
+  </view>
+</view>
+<!-- 底部区域 -->
+<view class="footer">
+  <image class="footer-img" src="../../../../images/footer.png"></image>
+  <view class="footer-text">
+    <view class="f-text">利他</view>
+    <view class="f-text">勤勉</view>
+    <view class="f-text">诚信</view>
+    <view class="f-text">共赢</view>
+  </view>
+</view>

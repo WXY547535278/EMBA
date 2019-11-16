@@ -1,0 +1,40 @@
+<view class="content">
+<swiper autoplay interval='{{interval}}' duration='{{duration}}' indicator-dots indicator-active-color='{{activeColor}}'>
+  <block wx:for="{{showFlash}}" wx:key="u">
+    <swiper-item bindtap="swiper" id="{{index}}">
+      <image src="{{item.img}}"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 视屏区域 -->
+<view class="hot-video">
+<block wx:for="{{showCurriculum}}" wx:key="u">
+  <view class="video" data-id="{{item.id}}" data-free="{{item.free}}" bindtap="classDetail">
+    <image class="video-play" src="../../../images/information/video-play.png"></image>
+    <image class="video-img" src="{{item.banner}}"></image>
+    <view class="video-title">{{item.name}}</view>
+    <view class="video-bottom">
+      <image class="video-icon" src="../../../images/tabbar-icon/me.png"></image>
+      <view class="video-watch">{{item.click}}人已观看</view>
+      <!-- <view class="video-free">{{item.price ==0?'免费':'￥'+item.price+'元'}}</view> -->
+      <view class="video-free" wx:if="{{item.free=='1'}}">免费</view>
+      <view class="video-free" wx:if="{{item.free=='0'}}">未购买</view>
+      <view class="video-free" wx:if="{{item.free == 'a'}}">免费</view>
+      <view class="video-free" wx:if="{{item.free == 'b'}}">已购买</view>
+      <view class="video-free" wx:if="{{item.free == 'c'}}">未购买</view>
+    </view>
+  </view>
+</block>
+  <!-- 底部区域 -->
+  <view class="footer">
+    <image class="footer-img" src="../../../images/footer.png"></image>
+    <view class="footer-text">
+      <view class="f-text">勤勉</view>
+      <view class="f-text">诚信</view>
+      <view class="f-text">利他</view>
+      <view class="f-text">共赢</view>
+    </view>
+  </view>
+</view>
+</view>
